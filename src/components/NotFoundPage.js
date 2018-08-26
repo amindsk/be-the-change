@@ -4,7 +4,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 //Page not found component for invalid URLs
-const NotFoundPage = () => (
+export const NotFoundPage = () => (
     //Component JSX
     <div>
         404 Not Found<NavLink activeClassName="home" to="/">Home</NavLink>

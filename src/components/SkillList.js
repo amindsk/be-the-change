@@ -7,13 +7,17 @@ import SkillListItem from './SkillListItem';
 //Importing the select to fetch skills ordered by ids
 import selectSkills from '../selectors/skills';
 //Component
-const SkillsList = (props) => (
+export const SkillList = (props) => (
     <div>
-        <h1>Skills List</h1>
-        {/* Rendering all of the availale skill items/objects */}
-        {props.skills.map((skill) => {
-            return <SkillListItem key={skill.id} {...skill} />
-        })}
+        {
+            props.skills.length === 0 ? (
+            <p>No Skills</p>
+            ) : (
+                props.skills.map((skill) => {
+                    return <SkillListItem key={skill.id} {...skill} />
+                })
+            )
+        }
     </div>
 );
 
@@ -25,4 +29,4 @@ const mapStateToProps = (state) => {
 };
 
 //Exporting component
-export default connect(mapStateToProps)(SkillsList);
+export default connect(mapStateToProps)(SkillList);
