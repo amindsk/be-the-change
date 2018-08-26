@@ -57,12 +57,13 @@ export default class SkillForm extends React.Component {
     render() {
         //Return JSX
         return (
-            <div>
+            <div className="form">
                 {/* Show error if any */}
                 {this.state.error && <p>{this.state.error}</p>}
                 {/* Add skill form */}
                 <form onSubmit={this.onSubmit}>
-                {/* Skill name */}
+                <div className="form-input">
+                    {/* Skill name */}
                     <input
                     type="text"
                     placeholder="Skill Here"
@@ -70,6 +71,8 @@ export default class SkillForm extends React.Component {
                     value={this.state.name}
                     onChange={this.onNameChange}
                     />
+                </div>
+                <div className="form__select-button">
                     {/* Skill experience */}
                     <select
                     value={this.state.experience}
@@ -84,6 +87,8 @@ export default class SkillForm extends React.Component {
                     </select>
                     {/* Add skill button */}
                     <button>ADD SKILL</button>
+                </div>
+                    
                 </form>
             </div>
         );

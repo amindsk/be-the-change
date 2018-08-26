@@ -5,7 +5,7 @@ import React from 'react';
 const Header = () => (
     //JSX of the component
     <header>
-        <h1>Skill Editor</h1>
+        <h1>ADD YOUR SKILLS</h1>
     </header>
 );
 

@@ -7,7 +7,7 @@ import SkillList from './SkillList';
 //Importing SkillForm component
 import SkillForm from '../components/SkillForm';
 //Importing addSkill action from redux
-import { addSkill } from '../actions/skills';
+import { startAddSkill } from '../actions/skills';
 //Base component for the app
 export const SkillEditorDashboard = (props) => (
     //Component JSX
@@ -15,7 +15,7 @@ export const SkillEditorDashboard = (props) => (
         {/* Embedding SKillForm component to add new skill */}
         <SkillForm onSubmit={(skill) => {
             // Passing skill to add to the store on submit of form
-            props.dispatch(addSkill(skill));
+            props.dispatch(startAddSkill(skill));
         }} />
         {/* Embedding SkillList component to render all of th elsit items */}
         <SkillList />
