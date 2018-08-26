@@ -9,6 +9,8 @@ export default (state = skillsReducerDefaultState, action) => {
                 ...state,
                 action.skill
             ];
+        case 'SET_SKILLS':
+            return action.skills
         case 'REMOVE_SKILL':
             return state.filter(( { id } ) => id !== action.id);
         default:

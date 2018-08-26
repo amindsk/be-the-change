@@ -3,7 +3,7 @@ import React from 'react';
 //Importing connect to dispatch actions and read from store
 import { connect } from 'react-redux';
 //To remove a skill from store
-import { removeSkill } from '../actions/skills';
+import { startRemoveSkill } from '../actions/skills';
 //Skill list item to represent a single skill
 export const SkillListItem = ({ dispatch, id, name, experience}) => (
     <div>
@@ -14,7 +14,7 @@ export const SkillListItem = ({ dispatch, id, name, experience}) => (
         {/* Button to remove a skill */}
         <button
         onClick={() => {
-            dispatch(removeSkill({ id }));
+            dispatch(startRemoveSkill({ id }));
         }}
         >Remove</button>
     </div>

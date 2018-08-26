@@ -41,3 +41,12 @@ test('Should add a skill with provided values', () => {
     const state = skillsReducer(skills, action);
     expect(state).toEqual([...skills, skill]);
 });
+
+test('Should set skills', () => {
+    const action = {
+        type: 'SET_SKILLS',
+        skills: [skills[1]]
+    };
+    const state = skillsReducer(skills, action);
+    expect(state).toEqual([skills[1]]);
+});
