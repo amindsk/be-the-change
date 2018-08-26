@@ -20,10 +20,10 @@ import './styles/styles.scss';
 
 const store = configureStore();
 
-// store.dispatch(addSkill({ id: 3, name: 'ReatJS', experience: '3 years' }));
-// store.dispatch(addSkill({ id: 1, name: 'NodeJS', experience: '2 years' }));
-// store.dispatch(addSkill({ id: 2, name: 'BabelJS', experience: '1 years' }));
-// console.log(store.getState());
+store.dispatch(addSkill({ id: 3, name: 'ReatJS', experience: '3 years' }));
+store.dispatch(addSkill({ id: 1, name: 'NodeJS', experience: '2 years' }));
+store.dispatch(addSkill({ id: 2, name: 'BabelJS', experience: '1 years' }));
+console.log(store.getState());
 // const state = store.getState();
 // const sortedSkills = getSkillsSortedById(state.skills, state.filters);
 // console.log(sortedSkills);

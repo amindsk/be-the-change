@@ -9,7 +9,7 @@ export default (state = skillsReducerDefaultState, action) => {
                 ...state,
                 action.skill
             ];
-        case 'REMOVE_EXPENSE':
+        case 'REMOVE_SKILL':
             return state.filter(( { id } ) => id !== action.id);
         default:
         return state
