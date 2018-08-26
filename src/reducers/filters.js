@@ -10,7 +10,7 @@ export default (state = filterReducerDefaultState, action) => {
         case 'SORT_BY_ID':
             return {
                 ...state,
-                sortBy: 'date'
+                sortBy: 'id'
             };
         default:
             return state
