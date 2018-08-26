@@ -28,5 +28,11 @@ const store = configureStore();
 // const sortedSkills = getSkillsSortedById(state.skills, state.filters);
 // console.log(sortedSkills);
 
+const jsx = (
+    <Provider store={store}>
+        <AppRouter />
+    </Provider>
+);
+
 //Rendering base components through Routers and React DOM
-ReactDOM.render(<AppRouter />, document.getElementById('app'));
+ReactDOM.render(jsx, document.getElementById('app'));
