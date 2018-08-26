@@ -2,13 +2,16 @@
 import React from 'react';
 //Class based component SkillForm to add skill
 export default class SkillForm extends React.Component {
-    //Local states of the component
-    state = {
-        name: '',
-        experience: '',
-        //To show error on wrong inputs/values provided
-        error: ''
-    };
+    constructor(props) {
+        super(props);
+        //Local states of the component
+        this.state = {
+            name: '',
+            experience: '',
+            //To show error on wrong inputs/values provided
+            error: ''
+        };
+    }
     //Binding input value of skill name with component's local state 
     onNameChange = (e) => {
         //Get the value of the input to prevent using presist()

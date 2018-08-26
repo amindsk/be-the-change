@@ -1,0 +1,396 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should call onSubmit prop for valid form submission 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Skill Here"
+      type="text"
+      value=""
+    />
+    <select
+      onChange={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        selected={true}
+        value=""
+      >
+        EXPERIENCE
+      </option>
+      <option
+        value="< 1 year"
+      >
+        &lt; 1 year
+      </option>
+      <option
+        value="1 - 3 years"
+      >
+        1 - 3 years
+      </option>
+      <option
+        value="3 - 5 years"
+      >
+        3 - 5 years
+      </option>
+      <option
+        value="5 - 7 years"
+      >
+        5 - 7 years
+      </option>
+      <option
+        value="7+ years"
+      >
+        7+ years
+      </option>
+    </select>
+    <button>
+      ADD SKILL
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Should render SkillForm correctly 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Skill Here"
+      type="text"
+      value=""
+    />
+    <select
+      onChange={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        selected={true}
+        value=""
+      >
+        EXPERIENCE
+      </option>
+      <option
+        value="< 1 year"
+      >
+        &lt; 1 year
+      </option>
+      <option
+        value="1 - 3 years"
+      >
+        1 - 3 years
+      </option>
+      <option
+        value="3 - 5 years"
+      >
+        3 - 5 years
+      </option>
+      <option
+        value="5 - 7 years"
+      >
+        5 - 7 years
+      </option>
+      <option
+        value="7+ years"
+      >
+        7+ years
+      </option>
+    </select>
+    <button>
+      ADD SKILL
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Should render SkillForm correctly with expense data 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Skill Here"
+      type="text"
+      value=""
+    />
+    <select
+      onChange={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        selected={true}
+        value=""
+      >
+        EXPERIENCE
+      </option>
+      <option
+        value="< 1 year"
+      >
+        &lt; 1 year
+      </option>
+      <option
+        value="1 - 3 years"
+      >
+        1 - 3 years
+      </option>
+      <option
+        value="3 - 5 years"
+      >
+        3 - 5 years
+      </option>
+      <option
+        value="5 - 7 years"
+      >
+        5 - 7 years
+      </option>
+      <option
+        value="7+ years"
+      >
+        7+ years
+      </option>
+    </select>
+    <button>
+      ADD SKILL
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Should render error for invalid form submission 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Skill Here"
+      type="text"
+      value=""
+    />
+    <select
+      onChange={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        selected={true}
+        value=""
+      >
+        EXPERIENCE
+      </option>
+      <option
+        value="< 1 year"
+      >
+        &lt; 1 year
+      </option>
+      <option
+        value="1 - 3 years"
+      >
+        1 - 3 years
+      </option>
+      <option
+        value="3 - 5 years"
+      >
+        3 - 5 years
+      </option>
+      <option
+        value="5 - 7 years"
+      >
+        5 - 7 years
+      </option>
+      <option
+        value="7+ years"
+      >
+        7+ years
+      </option>
+    </select>
+    <button>
+      ADD SKILL
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Should render error for invalid form submission 2`] = `
+<div>
+  <p>
+    Please provide skill name and experience
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Skill Here"
+      type="text"
+      value=""
+    />
+    <select
+      onChange={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        selected={true}
+        value=""
+      >
+        EXPERIENCE
+      </option>
+      <option
+        value="< 1 year"
+      >
+        &lt; 1 year
+      </option>
+      <option
+        value="1 - 3 years"
+      >
+        1 - 3 years
+      </option>
+      <option
+        value="3 - 5 years"
+      >
+        3 - 5 years
+      </option>
+      <option
+        value="5 - 7 years"
+      >
+        5 - 7 years
+      </option>
+      <option
+        value="7+ years"
+      >
+        7+ years
+      </option>
+    </select>
+    <button>
+      ADD SKILL
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Should set experience on select change 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Skill Here"
+      type="text"
+      value=""
+    />
+    <select
+      onChange={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        selected={true}
+        value=""
+      >
+        EXPERIENCE
+      </option>
+      <option
+        value="< 1 year"
+      >
+        &lt; 1 year
+      </option>
+      <option
+        value="1 - 3 years"
+      >
+        1 - 3 years
+      </option>
+      <option
+        value="3 - 5 years"
+      >
+        3 - 5 years
+      </option>
+      <option
+        value="5 - 7 years"
+      >
+        5 - 7 years
+      </option>
+      <option
+        value="7+ years"
+      >
+        7+ years
+      </option>
+    </select>
+    <button>
+      ADD SKILL
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Should set name on input change 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Skill Here"
+      type="text"
+      value=""
+    />
+    <select
+      onChange={[Function]}
+      value=""
+    >
+      <option
+        disabled={true}
+        selected={true}
+        value=""
+      >
+        EXPERIENCE
+      </option>
+      <option
+        value="< 1 year"
+      >
+        &lt; 1 year
+      </option>
+      <option
+        value="1 - 3 years"
+      >
+        1 - 3 years
+      </option>
+      <option
+        value="3 - 5 years"
+      >
+        3 - 5 years
+      </option>
+      <option
+        value="5 - 7 years"
+      >
+        5 - 7 years
+      </option>
+      <option
+        value="7+ years"
+      >
+        7+ years
+      </option>
+    </select>
+    <button>
+      ADD SKILL
+    </button>
+  </form>
+</div>
+`;

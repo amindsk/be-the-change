@@ -3,13 +3,13 @@ import React from 'react';
 //Importing connect to dispatch actions and read from store
 import { connect } from 'react-redux';
 //Importing SkillList component
-import SkillsList from './SkillsList';
+import SkillList from './SkillList';
 //Importing SkillForm component
 import SkillForm from '../components/SkillForm';
 //Importing addSkill action from redux
 import { addSkill } from '../actions/skills';
 //Base component for the app
-const SkillEditorDashboard = (props) => (
+export const SkillEditorDashboard = (props) => (
     //Component JSX
     <div>
         {/* Embedding SKillForm component to add new skill */}
@@ -18,7 +18,7 @@ const SkillEditorDashboard = (props) => (
             props.dispatch(addSkill(skill));
         }} />
         {/* Embedding SkillList component to render all of th elsit items */}
-        <SkillsList />
+        <SkillList />
     </div>
 );
 

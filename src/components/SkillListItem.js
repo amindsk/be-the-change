@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 //To remove a skill from store
 import { removeSkill } from '../actions/skills';
 //Skill list item to represent a single skill
-const SkillListItem = ({ dispatch, id, name, experience}) => (
+export const SkillListItem = ({ dispatch, id, name, experience}) => (
     <div>
         {/* Skill details */}
         <h3>{name}</h3>

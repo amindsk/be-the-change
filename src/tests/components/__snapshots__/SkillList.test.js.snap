@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render SkillList correctly 1`] = `
+<div>
+  <Connect(SkillListItem)
+    experience="7+ years"
+    id={3}
+    key="3"
+    name="ReactJS"
+  />
+  <Connect(SkillListItem)
+    experience="3 - 5 years"
+    id={1}
+    key="1"
+    name="NodeJS"
+  />
+  <Connect(SkillListItem)
+    experience="1 - 3 years"
+    id={2}
+    key="2"
+    name="PostgreSQL"
+  />
+</div>
+`;
+
+exports[`Should render SkillList with empty message 1`] = `
+<div>
+  <p>
+    No Skills
+  </p>
+</div>
+`;
