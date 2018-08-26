@@ -1,6 +1,10 @@
+//Importing redux to create store and combine reducers
 import { createStore, combineReducers } from 'redux';
+//Importing skills reducer
 import skillsReducer from '../reducers/skills';
+//Importing filters reducer
 import skillFilter from '../reducers/filters';
+//Creating redux store
 export default () => {
     const store = createStore(
         combineReducers({

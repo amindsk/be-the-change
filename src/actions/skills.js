@@ -1,4 +1,5 @@
-//Add_Expense
+//Redux Action: Add_SKILL
+//To add a new skill
 export const addSkill = (
     {
         id = 0,
@@ -13,7 +14,8 @@ export const addSkill = (
         experience
     }
 });
-//Remove_Expense
+//Redux Action: REMOVE_SKILL
+//To remove a skill by id
 export const removeSkill = ( { id } = {}) => ({
     type: 'REMOVE_SKILL',
     id

@@ -1,3 +1,4 @@
+//Redux Selector: To get a sorted skills based on ids
 export default (skills, { sortBy }) => {
     return skills.sort((a, b) => {
         if(sortBy === 'id') {
