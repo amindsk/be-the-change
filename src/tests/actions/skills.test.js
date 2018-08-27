@@ -10,7 +10,7 @@ const createMockStore = configureMockStore([thunk]);
 
 //If action REMOVE_SKILL generated
 test('Should setup remove skill action object', () => {
-    const action = removeSkill( { id: 123 } );
+    const action = removeSkill({ id: 123 });
     expect(action).toEqual({
         type: 'REMOVE_SKILL',
         id: 123

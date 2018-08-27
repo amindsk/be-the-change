@@ -6,7 +6,7 @@ const filterReducerDefaultState = {
 
 //Embeding actions in redux filter's reducer
 export default (state = filterReducerDefaultState, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case 'SORT_BY_ID':
             return {
                 ...state,

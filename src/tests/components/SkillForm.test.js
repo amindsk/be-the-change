@@ -17,7 +17,7 @@ test('Should render error for invalid form submission', () => {
     const wrapper = shallow(<SkillForm />);
     expect(wrapper).toMatchSnapshot();
     wrapper.find('form').simulate('submit', {
-        preventDefault: () => {}
+        preventDefault: () => { }
     });
     expect(wrapper.state('error').length).toBeGreaterThan(0);
     expect(wrapper).toMatchSnapshot();

@@ -3,7 +3,7 @@
 const skillsReducerDefaultState = [];
 //Embedding actions to skill's reducer
 export default (state = skillsReducerDefaultState, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case 'ADD_SKILL':
             return [
                 ...state,
@@ -12,8 +12,8 @@ export default (state = skillsReducerDefaultState, action) => {
         case 'SET_SKILLS':
             return action.skills
         case 'REMOVE_SKILL':
-            return state.filter(( { id } ) => id !== action.id);
+            return state.filter(({ id }) => id !== action.id);
         default:
-        return state
+            return state
     }
 };
