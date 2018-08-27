@@ -8,13 +8,18 @@ import SkillListItem from './SkillListItem';
 import selectSkills from '../selectors/skills';
 //Component
 export const SkillList = (props) => (
-    <div>
+    <div className="items-list">
         {
+            //Display No Skilssif there is not any skill
             props.skills.length === 0 ? (
             <p>No Skills</p>
             ) : (
-                props.skills.map((skill) => {
-                    return <SkillListItem key={skill.id} {...skill} />
+                //Render skills if any
+                props.skills.map((skill, index) => {
+                    //To apply css class on first five skills
+                    return index < 5 ?
+                     <SkillListItem key={skill.id} firstFive={true} {...skill} />
+                    : <SkillListItem key={skill.id} {...skill} />;
                 })
             )
         }

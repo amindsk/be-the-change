@@ -14,9 +14,8 @@ export default () => {
             skills: skillsReducer,
             filters: skillFilter
         }),
+        //To enable redux thunk
         composeEnhancers(applyMiddleware(thunk))
-        //To enable redux dev tools
-        //window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
     );
     return store;
 };
