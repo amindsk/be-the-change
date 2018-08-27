@@ -3,7 +3,7 @@
 exports[`Should render Header correctly 1`] = `
 <header>
   <h1>
-    Skill Editor
+    ADD YOUR SKILLS
   </h1>
 </header>
 `;

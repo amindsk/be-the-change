@@ -1,21 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render SkillList correctly 1`] = `
-<div>
+<div
+  className="items-list"
+>
   <Connect(SkillListItem)
     experience="7+ years"
+    firstFive={true}
     id={3}
     key="3"
     name="ReactJS"
   />
   <Connect(SkillListItem)
     experience="3 - 5 years"
+    firstFive={true}
     id={1}
     key="1"
     name="NodeJS"
   />
   <Connect(SkillListItem)
     experience="1 - 3 years"
+    firstFive={true}
     id={2}
     key="2"
     name="PostgreSQL"
@@ -24,7 +29,9 @@ exports[`Should render SkillList correctly 1`] = `
 `;
 
 exports[`Should render SkillList with empty message 1`] = `
-<div>
+<div
+  className="items-list"
+>
   <p>
     No Skills
   </p>
