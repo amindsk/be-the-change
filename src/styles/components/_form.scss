@@ -1,7 +1,83 @@
-.form{
-    width: 100%;
-    background: red;
+//Handle ListForm component styles
+.dv-input {
+    float: left;
+    width: 70vw;
+    margin-left: 0;
 }
-.form__input {
-    width: 57rem;
+.dv-form {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.form-input {
+    height: 4.5rem;
+    width: 130%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+.dv-select-button {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    
+}
+.form-select {
+    text-align: center;
+    font-weight: bold;
+    height: 5rem;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+.form-button {
+    background: #304B5E;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 5rem;
+    width: 40%;
+    margin: 10px;
+}
+
+.form-button:hover {
+    background: #5C7180;
+    cursor: pointer;
+}
+.form-error {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: #304B5E;
+}
+.form {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+@media (min-width: 45rem) { 
+    .form {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .form-input {
+        height: 4.5rem;
+        width: 90%;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    .dv-input {
+        float: left;
+        width: 35vw;
+        margin-left: 4vw;
+    }
+    .dv-select-button {
+        width: 55vw;
+        
+    }
 }

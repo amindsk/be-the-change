@@ -5,6 +5,7 @@ import { addSkill, startRemoveSkill, startSetSkills, startAddSkill, removeSkill,
 import skills from '../fixtures/skills';
 import axios from 'axios';
 
+//Creating mock store for testing asynchronous actions
 const createMockStore = configureMockStore([thunk]);
 
 //If action REMOVE_SKILL generated
@@ -16,7 +17,7 @@ test('Should setup remove skill action object', () => {
     });
 });
 
-//If action ADD_SKILL generated if skill values provided
+//If action emoves skill from database
 test('Should remove skill from database and store', (done) => {
     const store = createMockStore({});
     const id = 128;
@@ -46,7 +47,7 @@ test('Should setup add skill action object with provided values', () => {
     });
 });
 
-//If action ADD_SKILL generated if skill values provided
+//If action adds skill to database
 test('Should add skill to database and store', (done) => {
     const store = createMockStore({});
     const skillData = {
@@ -73,7 +74,7 @@ test('Should add skill to database and store', (done) => {
     done();
 });
 
-//If action ADD_SKILL generated if skill values provided
+//If action adds skill in the database
 test('Should add skill with defaults to database and store', (done) => {
     const store = createMockStore({});
     const skillDefaults = {
@@ -100,7 +101,7 @@ test('Should add skill with defaults to database and store', (done) => {
     done();
 });
 
-//If action ADD_SKILL generated if skill values provided
+//If action Get Skills from store
 test('Should setup set skills action object with data', () => {
     const action = setSkills(skills);
     expect(action).toEqual({
@@ -109,6 +110,7 @@ test('Should setup set skills action object with data', () => {
     });
 });
 
+//If action Get Skills from database
 test('Should fetch the skills from database', (done) => {
     const store = createMockStore({});
     store.dispatch(startSetSkills()).then(() => {

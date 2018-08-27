@@ -1,21 +1,8 @@
-// Base styles of the application
+//Base components styles goes here
 html{
     font-size: 62.5%;
 }
 body {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: $m-size;
-    background: yellow;
-}
-
-button {
-    cursor: pointer;
-}
-
-button:disabled {
-    cursor: default;
-}
-
-.home {
-    font-weight: bold;
+    background: #F5F6F7;
 }

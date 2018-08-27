@@ -4,12 +4,14 @@ const instance = axios.create({
 });
 
 //Redux Action: Add_SKILL
-//To add a new skill
+//To add a new skill in store
 export const addSkill = (skill) => ({
     type: 'ADD_SKILL',
     skill
 });
 
+
+//To add a new skill in database asynchronously
 export const startAddSkill = (skillData = {}) => {
     return (dispatch) => {
         const {
@@ -31,6 +33,7 @@ export const removeSkill = ( { id } = {}) => ({
     id
 });
 
+//To remove a skill from database asychronously
 export const startRemoveSkill = ( { id } = { } ) => {
     return (dispatch) => {
         return instance.delete(`/skills/${id}`).then(() => {
@@ -39,11 +42,13 @@ export const startRemoveSkill = ( { id } = { } ) => {
     };
 };
 
+//To gt all skills from store
 export const setSkills = (skills) => ({
     type: 'SET_SKILLS',
     skills
 });
 
+//To get all skills from databasse asynchronously
 export const startSetSkills = () => {
     return (dispatch) => {
         return instance.get('/skills').then((data) => {

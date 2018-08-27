@@ -57,24 +57,28 @@ export default class SkillForm extends React.Component {
     render() {
         //Return JSX
         return (
-            <div className="form">
+            <div className="dv-form">
                 {/* Show error if any */}
-                {this.state.error && <p>{this.state.error}</p>}
+                {this.state.error && <p className="form-error">{this.state.error}</p>}
                 {/* Add skill form */}
-                <form onSubmit={this.onSubmit}>
-                <div className="form-input">
-                    {/* Skill name */}
+                <form
+                className="form"
+                onSubmit={this.onSubmit}>
+                    <div className="dv-input">
                     <input
+                    className="form-input"
                     type="text"
-                    placeholder="Skill Here"
+                    placeholder="Node JS, Postgres, React, etc."
                     autoFocus
                     value={this.state.name}
                     onChange={this.onNameChange}
                     />
-                </div>
-                <div className="form__select-button">
+                    </div>
+                    {/* Skill name */}
+                    <div className="dv-select-button">
                     {/* Skill experience */}
                     <select
+                    className="form-select"
                     value={this.state.experience}
                     onChange={this.onExperienceChange}
                     >
@@ -86,8 +90,9 @@ export default class SkillForm extends React.Component {
                         <option value="7+ years">7+ years</option>
                     </select>
                     {/* Add skill button */}
-                    <button>ADD SKILL</button>
-                </div>
+                    <button className="form-button">ADD SKILL</button>
+                    </div>
+                    
                     
                 </form>
             </div>
