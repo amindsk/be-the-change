@@ -4,11 +4,6 @@
     width: 70vw;
     margin-left: 0;
 }
-.dv-form {
-    text-align: center;
-    align-content: center;
-    align-items: center;
-}
 .form-input {
     height: 4.5rem;
     width: 130%;
@@ -61,18 +56,12 @@
 
 @media (min-width: 45rem) { 
     .form {
-        display: inline-flex;
         flex-direction: row;
     }
     .form-input {
-        height: 4.5rem;
         width: 90%;
-        border: 1px solid black;
-        border-radius: 5px;
-        margin: 10px;
     }
     .dv-input {
-        float: left;
         width: 35vw;
         margin-left: 4vw;
     }
