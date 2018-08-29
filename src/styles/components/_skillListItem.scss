@@ -68,26 +68,16 @@
 
 @media (min-width: 45rem) { 
     .skill{
-        margin-left: 10px;
-        float: left;
         width: auto;
-        min-width: 200px;
-        padding: 10px;
-        height: 80px;
-        position: relative;
     }
 
     .skill-x {
-        background: transparent;
         color: white;
-        float: right;
-        border: none;
         margin-top: 10px;
         margin-right: 10px;
         position: absolute;
         font-size: 20px;
         top: 0;
-        right: 0; 
-        height: 18px;
+        right: 0;
     }
 }
